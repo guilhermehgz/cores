@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Desafio das Cores</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(270deg, red, orange, yellow, green, cyan, blue, violet);
+      background-size: 1400% 1400%;
+      animation: arcoiris 20s ease infinite;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    @keyframes arcoiris {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px white;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .descricao {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .botao-jogar {
+      display: inline-block;
+      background: linear-gradient(to right, red, rgb(0, 183, 255), yellow, green, blue, indigo, violet);
+      padding: 15px 30px;
+      border: none;
+      border-radius: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      font-weight: bold;
+      box-shadow: 0 0 10px rgba(255,255,255,0.6);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .botao-jogar:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(187, 10, 10, 0.9);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🌈 Desafio das Cores 🌈</h1>
+    <p class="descricao">
+      Bem-vindo ao <strong>Desafio das Cores</strong>! <br/>
+      Sua missão é simples: observe a <strong>Cor da Vez</strong> e clique rapidamente no botão correspondente para acertar a cor.<br/>
+          </p>
+
+    <a href="cormaria.html" class="botao-jogar">🎮 Jogar Agora</a>
+  </div>
+</body>
+</html>
